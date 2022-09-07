@@ -3,7 +3,7 @@
   <Topnav></Topnav>
   <div class="banner">
     <h1>Pink UI</h1>
-    <h2>能给你一个粉红回忆的 UI 框架</h2>
+    <h2>给你一个粉红的回忆</h2>
     <p class="actions">
       <a href="https://github.com">GitHub</a>
       <router-link to="/doc">开始</router-link>
