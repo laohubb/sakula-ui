@@ -5,7 +5,7 @@ import DocDemo from './components/DocDemo.vue';
 import Switch from './components/SwitchDemo.vue';
 import Dialog from './components/Dialog.vue';
 import Tabs from './components/Tabs.vue';
-import button from './components/Button.vue';
+import button from './components/ButtonDemo.vue';
 
 
 const history=createWebHistory()
