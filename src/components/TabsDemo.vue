@@ -6,7 +6,6 @@
     <Tab title="intro2"></Tab>
   </Tabs>
 
-
 </div>
 </template>
 
