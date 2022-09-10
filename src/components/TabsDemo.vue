@@ -1,12 +1,12 @@
 <template>
 <div>
-  button组件
+  asdfk;
 </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'Dialog'
+  name: 'TabsDemo'
 };
 </script>
 
