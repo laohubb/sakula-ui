@@ -1,13 +1,15 @@
 <template>
   <div class="topnav">
-    <div class="logo">
+    <router-link to="/" class="logo">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-sakura-flower"></use>
       </svg>
-    </div>
+    </router-link>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      <li>
+        <router-link to="/doc">文档</router-link>
+      </li>
+
     </ul>
 
     <svg v-if="toggleMenuButtonVisible" class="icon" aria-hidden="true" class="toggleAside" @click="toggleMenu">
@@ -41,6 +43,7 @@ export default {
 
 
 <style lang="scss" scoped>
+
 .topnav {
   display: flex;
   padding: 16px;
@@ -51,9 +54,8 @@ export default {
   z-index: 10;
   justify-content: center;
   align-items: center;
-  //border: 1px solid red;
+  color: darken(#f5c4cb, 20);
   > .logo {
-    //border: 1px solid red;
     max-width: 6em;
     margin-right: auto;
     font-size: 24px;

@@ -47,7 +47,7 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$pink: #d77480;
 $radius: 4px;
 $red: red;
 $grey: grey;
@@ -73,8 +73,8 @@ $grey: grey;
 
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    color: $pink;
+    border-color: $pink;
   }
 
   &:focus {
@@ -88,11 +88,11 @@ $grey: grey;
   &.gulu-theme-link {
     border-color: transparent;
     box-shadow: none;
-    color: $blue;
+    color: $pink;
 
     &:hover,
     &:focus {
-      color: lighten($blue, 10%);
+      color: lighten($pink, 10%);
     }
   }
 
@@ -121,14 +121,14 @@ $grey: grey;
 
   &.gulu-theme-button {
     &.gulu-level-main {
-      background: $blue;
+      background: $pink;
       color: white;
-      border-color: $blue;
+      border-color: $pink;
 
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        background: darken($pink, 10%);
+        border-color: darken($pink, 10%);
       }
     }
 
@@ -158,11 +158,11 @@ $grey: grey;
 
   &.gulu-theme-text {
     &.gulu-level-main {
-      color: $blue;
+      color: $pink;
 
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
+        color: darken($pink, 10%);
       }
     }
 
@@ -200,7 +200,7 @@ $grey: grey;
     display: inline-block;
     margin-right: 4px;
     border-radius: 8px;
-    border-color: $blue $blue $blue transparent;
+    border-color: $pink $pink $pink transparent;
     border-style: solid;
     border-width: 2px;
     animation: gulu-spin 1s infinite linear;

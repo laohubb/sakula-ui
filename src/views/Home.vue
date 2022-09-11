@@ -4,15 +4,13 @@
     <Topnav></Topnav>
 
     <div class="banner">
-      <button>;lk</button>
       <h1>Sakula UI</h1>
-      <h2>一个有霓虹味道的图形界面框架</h2>
+      <h2>一个有霓虹味道的图形组件</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
         <router-link to="/doc">Start</router-link>
       </p>
     </div>
-
     <div class="sakula">
       <div class="camera -x">
         <div class="camera -y">
@@ -242,7 +240,6 @@ $color: darken(#f5c4cb, 20);
 
   background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); //border-bottom-left-radius:$borderRadius;
   //border-bottom-right-radius: $borderRadius;
-
   .sakula {
     position: absolute;
     top: 0;
@@ -494,6 +491,10 @@ $color: darken(#f5c4cb, 20);
       }
     }
   }
+}
+
+.topnav{
+  position: relative;
 }
 
 .banner {
