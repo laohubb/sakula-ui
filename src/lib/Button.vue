@@ -1,6 +1,10 @@
 <template>
   <button class="gulu-button" :class="classes" :disabled="disabled">
-    <span v-if="loading" class="gulu-loadingIndicator"></span>
+    <div v-if="loading" class="gulu-loadingIndicator">
+      <div class="rect1">&nbsp;</div>
+      <div class="rect2">&nbsp;</div>
+      <div class="rect3">&nbsp;</div>
+    </div>
     <slot/>
   </button>
 </template>
@@ -49,7 +53,7 @@ $border-color: #d9d9d9;
 $color: #333;
 $pink: #d77480;
 $radius: 4px;
-$red: red;
+$red: darken(#ec5b56, 10);
 $grey: grey;
 .gulu-button {
   box-sizing: border-box;
@@ -195,15 +199,25 @@ $grey: grey;
   }
 
   > .gulu-loadingIndicator {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    margin-right: 4px;
-    border-radius: 8px;
-    border-color: $pink $pink $pink transparent;
-    border-style: solid;
-    border-width: 2px;
-    animation: gulu-spin 1s infinite linear;
+    .rect1{
+      animation-delay:-1.1s
+    }
+    .rect2{
+      animation-delay:-1s
+    }
+    .rect3{
+      animation-delay:-0.9s
+    }
+    >div{
+      margin-right: 2px;
+      background-color: $pink;
+      height: 100%;
+      width: 2px;
+      display: inline-block;
+      -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+      animation: 1.2s ease-in-out infinite stretchdelay;
+
+    }
   }
 }
 
@@ -213,6 +227,17 @@ $grey: grey;
   }
   100% {
     transform: rotate(360deg)
+  }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
   }
 }
 </style>
