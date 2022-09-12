@@ -56,6 +56,10 @@ export default {
   align-items: center;
   color: darken(#f5c4cb, 20);
   > .logo {
+    .icon{
+      top: 0;
+      left: 0;
+    }
     max-width: 6em;
     margin-right: auto;
     font-size: 24px;
@@ -82,6 +86,12 @@ export default {
   }
 
   @media (max-width: 500px) {
+    &{
+      //border: 1px solid red;
+      box-shadow: 0px 2px 5px #f1b4b4;
+      background-color: #fbece7;
+      overflow: hidden;
+    }
     > .menu {
       display: none;
     }

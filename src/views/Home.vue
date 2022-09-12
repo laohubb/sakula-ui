@@ -235,21 +235,21 @@ $border-radius: 4px;
 $color: darken(#f5c4cb, 20);
 
 .topnavAndBanner {
-
   width: 100%;
-
-  background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); //border-bottom-left-radius:$borderRadius;
-  //border-bottom-right-radius: $borderRadius;
+  background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+  //border-bottom-left-radius:$borderRadius;
   .sakula {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
+
     .title {
       font-size: 6rem;
       color: #fcc;
     }
+
     div {
       transform-style: preserve-3d;
       top: 0;
@@ -279,6 +279,7 @@ $color: darken(#f5c4cb, 20);
       border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
       background: #fcc;
       transform: rotateZ(45deg);
+
       &::before {
         content: '';
         position: absolute;
@@ -444,19 +445,28 @@ $color: darken(#f5c4cb, 20);
       }
     }
   }
-
-
 }
 
 .features {
+
   margin: 56px auto;
-  width: 400px;
+ padding: 0 16px;
+
   @media (min-width: 800px) {
-    width: 800px;
+   >ul{
+     >li{
+         width: 50%;
+     }
+   }
   }
 
   @media (min-width: 1200px) {
-    width: 1200px;
+    width:1200px;
+    >ul {
+      >li {
+        width: 33.3333%;
+      }
+    }
   }
 
   > ul {
@@ -464,7 +474,6 @@ $color: darken(#f5c4cb, 20);
     flex-wrap: wrap;
 
     > li {
-      width: 400px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
@@ -493,7 +502,7 @@ $color: darken(#f5c4cb, 20);
   }
 }
 
-.topnav{
+.topnav {
   position: relative;
 }
 

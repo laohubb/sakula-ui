@@ -5,8 +5,8 @@
 <template>
   <div>
     <Tabs v-model:selected="x">
-      <Tab title="intro1"></Tab>
-      <Tab title="intro2"></Tab>
+      <Tab title="Tab1">内容1</Tab>
+      <Tab title="Tab2">内容2</Tab>
     </Tabs>
   </div>
 </template>
@@ -19,7 +19,7 @@ import Tabs from '../lib/Tabs.vue'
 export default {
   components: {Tab,Tabs},
   setup(){
-   const x =ref('intro1')
+   const x =ref('Tab1')
    return {x}
  }
 };
