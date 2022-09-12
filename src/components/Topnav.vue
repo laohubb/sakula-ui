@@ -12,7 +12,7 @@
 
     </ul>
 
-    <svg v-if="toggleMenuButtonVisible" class="icon" aria-hidden="true" class="toggleAside" @click="toggleMenu">
+    <svg v-if="toggleMenuButtonVisible"  aria-hidden="true" class="toggleAside" @click="toggleMenu">
       <use xlink:href="#icon-menu"></use>
     </svg>
 
