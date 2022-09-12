@@ -23,7 +23,8 @@
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
+// ../lib为相对路径,请改为"sakula-ui"
+import {Button} from "../lib";
 export default {
   components: { Button },
   setup() {

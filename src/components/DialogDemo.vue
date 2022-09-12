@@ -7,9 +7,10 @@
 </template>
 
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 
-import Dialog from '../lib/Dialog.vue';
-import Button from '../lib/Button.vue';
+import {Dialog} from "../lib";
+import {Button} from "../lib";
 import Dialog1 from '../components/Dialog1.demo.vue';
 import Dialog2 from '../components/Dialog1.demo.vue';
 import {ref, h} from 'vue';

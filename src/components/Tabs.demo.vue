@@ -12,9 +12,10 @@
 </template>
 
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 import {ref} from 'vue';
-import Tab from '../lib/Tab.vue'
-import Tabs from '../lib/Tabs.vue'
+import {Tab} from "../lib";
+import {Tabs} from "../lib";
 
 export default {
   components: {Tab,Tabs},

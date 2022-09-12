@@ -8,8 +8,9 @@
 
 </template>
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 import Demo from './Demo.vue';
-import Button from "../lib/Button.vue";
+import {Button} from "../lib";
 import Button1 from '../components/Button1.demo.vue'
 import Button2 from '../components/Button2.demo.vue'
 import Button3 from '../components/Button3.demo.vue'

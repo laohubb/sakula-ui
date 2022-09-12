@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 import TabsDemo from '../components/Tabs.demo.vue'
 import Demo from './Demo.vue';
 export default {

@@ -18,8 +18,8 @@
 </template>
 
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 import Button from '../lib/Button.vue'
-import SwitchDemo1 from './Switch1.demo.vue'
 import 'prismjs';
 import 'prismjs/themes/prism.css'
 import {ref} from 'vue';

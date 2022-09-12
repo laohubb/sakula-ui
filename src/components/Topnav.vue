@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts">
+// ../lib为相对路径,请改为"sakula-ui"
 
 import {inject, Ref} from 'vue';
 
