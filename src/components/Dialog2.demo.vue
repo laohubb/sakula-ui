@@ -1,9 +1,9 @@
 <demo>
-基础用法
+直接打开
 </demo>
 
 <template>
-  <Button @click="showDialog">show</Button>
+  <Button @click="showDialog">示例</Button>
 </template>
 
 <script lang="ts">
@@ -16,8 +16,6 @@ import {openDialog} from '../lib/openDialog';
 export default {
   components: {Button, Dialog},
   setup() {
-
-
     const showDialog = () => {
       openDialog({
         title: '标题',

@@ -4,7 +4,7 @@
 
 <template>
   <Button @click="toggle">示例</Button>
-  <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="fn1" :cancel="fn2">
+  <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="fn1" :cancel="fn2">
     <template v-slot:content>
       <strong>hi</strong>
       <div>hi2</div>
@@ -32,7 +32,7 @@ export default {
       return true;
     };
     const fn2 = () => {
-      console.log('执行2');
+      return true;
     };
 
     return {x, toggle, fn1, fn2};

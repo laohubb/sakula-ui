@@ -12,7 +12,7 @@
 import {Dialog} from "../lib";
 import {Button} from "../lib";
 import Dialog1 from '../components/Dialog1.demo.vue';
-import Dialog2 from '../components/Dialog1.demo.vue';
+import Dialog2 from '../components/Dialog2.demo.vue';
 import {ref, h} from 'vue';
 import {openDialog} from '../lib/openDialog';
 import Demo from './Demo.vue';

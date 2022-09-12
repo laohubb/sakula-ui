@@ -237,7 +237,8 @@ $color: darken(#f5c4cb, 20);
 .topnavAndBanner {
   width: 100%;
   background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
-  //border-bottom-left-radius:$borderRadius;
+  clip-path: ellipse(100% 77% at 50% 22%);
+
   .sakula {
     position: absolute;
     top: 0;
@@ -318,7 +319,7 @@ $color: darken(#f5c4cb, 20);
 
           .size {
             transform: scale(random(2) + 1);
-            // transform: translateZ(random(500) * -1px);
+
           }
 
           .rotate {
@@ -507,15 +508,20 @@ $color: darken(#f5c4cb, 20);
 }
 
 .banner {
+
   position: relative;
   z-index: 10;
   color: $color;
-  padding: 100px 0;
+
+  padding-top: 80px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+ > h1,h2{
+   margin-bottom: 10px;
+ }
   > .actions {
     padding: 8px 0;
 
