@@ -40,3 +40,6 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
+button{
+  touch-action: none;
+}
