@@ -1,5 +1,5 @@
 <demo>
-多重状态
+危险状态
 </demo>
 
 <template>
@@ -10,8 +10,7 @@
       <Button level="danger">危险按钮</Button>
     </div>
     <div>
-      <Button theme="link" level="main">主要链接按钮</Button>
-      <Button theme="link">普通链接按钮</Button>
+      <Button theme="link">链接按钮</Button>
       <Button theme="link" level="danger">危险链接按钮</Button>
     </div>
     <div>

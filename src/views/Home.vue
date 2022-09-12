@@ -199,7 +199,7 @@
           <use xlink:href="#icon-Vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
-        <p>骄傲地使用了 Vue 3 Composition API</p>
+        <p>使用 Vue3 Composition API 构建组件</p>
       </li>
       <li>
         <svg>
@@ -213,7 +213,7 @@
           <use xlink:href="#icon-dengpao_"></use>
         </svg>
         <h3>代码易读</h3>
-        <p>每个组件的源代码都极其简洁</p>
+        <p>每个组件的源代码都极易理解</p>
       </li>
     </ul>
   </div>
