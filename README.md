@@ -21,7 +21,7 @@ yarn add sakula-ui
 
 ### 使用
 
-请先[安装](http://localhost:3000/doc/get-started#/doc/install)本组件库。
+请先安装本组件库。
 
 然后在你的代码中写入下面的代码
 
