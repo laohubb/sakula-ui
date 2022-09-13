@@ -195,11 +195,13 @@
   <div class="features">
     <ul>
       <li>
-        <svg>
-          <use xlink:href="#icon-Vue"></use>
-        </svg>
-        <h3>基于 Vue 3</h3>
-        <p>使用 Vue3 Composition API 构建组件</p>
+
+          <svg>
+            <use xlink:href="#icon-Vue"></use>
+          </svg>
+          <h3>基于 Vue 3</h3>
+          <p>使用 Vue3 Composition API 构建组件</p>
+
       </li>
       <li>
         <svg>
@@ -213,7 +215,7 @@
           <use xlink:href="#icon-dengpao_"></use>
         </svg>
         <h3>代码易读</h3>
-        <p>每个组件的源代码都极易理解</p>
+        <p>每个组件的源代码都简洁易懂</p>
       </li>
     </ul>
   </div>
@@ -451,20 +453,26 @@ $color: darken(#f5c4cb, 20);
 .features {
 
   margin: 56px auto;
- padding: 0 16px;
+  padding: 0 16px;
+  >ul{
+    >li{
+      //border: 1px solid red;
+      padding-left: 60px;
+    }
 
+  }
   @media (min-width: 800px) {
-   >ul{
-     >li{
-         width: 50%;
-     }
-   }
+    > ul {
+      > li {
+        width: 50%;
+      }
+    }
   }
 
   @media (min-width: 1200px) {
-    width:1200px;
-    >ul {
-      >li {
+    width: 1200px;
+    > ul {
+      > li {
         width: 33.3333%;
       }
     }
@@ -483,7 +491,7 @@ $color: darken(#f5c4cb, 20);
         "icon title"
         "icon text";
       grid-template-columns: 80px auto;
-      grid-template-rows: 1fr auto;
+      grid-template-rows: auto 1fr;
 
       > svg {
         grid-area: icon;
@@ -497,7 +505,7 @@ $color: darken(#f5c4cb, 20);
       }
 
       > p {
-        grid-area: text
+        grid-area: text;
       }
     }
   }
@@ -519,9 +527,11 @@ $color: darken(#f5c4cb, 20);
   justify-content: center;
   align-items: center;
   flex-direction: column;
- > h1,h2{
-   margin-bottom: 10px;
- }
+
+  > h1, h2 {
+    margin-bottom: 10px;
+  }
+
   > .actions {
     padding: 8px 0;
 

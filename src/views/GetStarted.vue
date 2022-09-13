@@ -6,9 +6,10 @@
 
     <p>请先<a href="#/doc/install">安装</a>本组件库。</p>
     <p>然后在你的代码中写入下面的代码</p>
-    <pre><code>import {Button,Switch,Tabs,Tab,openDialog,Dialog} from 'sakula-ui'</code></pre>
-    就可以使用我提供的组件了。
+    <pre><code>import {Button,Switch,Tabs,Tab,openDialog,Dialog} from 'sakula-ui'
+import 'sakula-ui/dist/lib/sakula.css'</code></pre>
 
+    就可以使用我提供的组件了。
     <h2>Vue 单文件组件</h2>
     <p>代码示例：</p>
     <pre><code>&lt;template&gt;
@@ -16,6 +17,7 @@
 &lt;/template&gt;
 &lt;script&gt;
   import {Button,Switch,Tabs,Tab,openDialog,Dialog} from 'sakula-ui'
+  import 'sakula-ui/dist/lib/sakula.css'
   export default {
     components: {Button}
   }
