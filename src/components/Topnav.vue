@@ -7,11 +7,10 @@
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">文档</router-link>
+        <router-link to="/" v-if="visible()">首页</router-link>
+        <router-link to="/doc" v-else>文档</router-link>
       </li>
-
     </ul>
-
     <svg v-if="toggleMenuButtonVisible"  aria-hidden="true" class="toggleAside" @click="toggleMenu">
       <use xlink:href="#icon-menu"></use>
     </svg>
@@ -37,7 +36,11 @@ export default {
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
     };
-    return {toggleMenu};
+    const visible=()=>{
+      return location.hash.includes('doc')
+    }
+
+    return {toggleMenu,visible};
   }
 };
 </script>
@@ -88,7 +91,6 @@ export default {
 
   @media (max-width: 500px) {
     &{
-      //border: 1px solid red;
       box-shadow: 0px 2px 5px #f1b4b4;
       background-color: #fbece7;
       overflow: hidden;

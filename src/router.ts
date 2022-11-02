@@ -1,4 +1,4 @@
-import {createWebHistory,createRouter} from 'vue-router'
+import {createWebHashHistory,createRouter} from 'vue-router'
 import Home from './views/Home.vue';
 import Doc from './views/Doc.vue';
 import DocDemo from './components/DocDemo.vue';
@@ -10,7 +10,7 @@ import TabsDemo from './components/TabsDemo.vue'
 import Intro from './views/Intro.vue';
 import GetStarted from './views/GetStarted.vue'
 import Install from './views/Install.vue'
-const history=createWebHistory()
+const history=createWebHashHistory()
 export const router=createRouter({
     history:history,
     routes:[

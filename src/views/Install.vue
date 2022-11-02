@@ -7,7 +7,7 @@
     <pre><code>yarn add sakula-ui</code></pre>
 
     <p>
-      下一节：<a href="/doc/get-started">开始使用</a>
+      下一节：<router-link to="/doc/get-started">开始使用</router-link>
     </p>
   </article>
 </template>
