@@ -48,6 +48,7 @@ export default {
   setup(){
     const menuVisible=inject<Ref<boolean>>("menuVisible")
     return {menuVisible}
+    //Todo 手机关闭侧栏切到pc后消失了
   }
 };
 </script>

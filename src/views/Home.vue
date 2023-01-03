@@ -2,7 +2,6 @@
 
   <div class="topnavAndBanner">
     <Topnav></Topnav>
-
     <div class="banner">
       <h1>Sakula UI</h1>
       <h2>一个有霓虹味道的图形组件</h2>
@@ -191,7 +190,6 @@
     </div>
   </div>
 
-
   <div class="features">
     <ul>
       <li>
@@ -313,7 +311,6 @@ $color: darken(#f5c4cb, 20);
           left: random(100) + 0%;
           animation-delay: random(9999) * -1ms;
           animation-duration: random(8) + 5s;
-
           .slide {
             animation-delay: random(9999) * -1ms;
             animation-duration: random(10) + 5s;

@@ -163,7 +163,6 @@ $grey: grey;
   &.gulu-theme-text {
     &.gulu-level-main {
       color: $pink;
-
       &:hover,
       &:focus {
         color: darken($pink, 10%);
