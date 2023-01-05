@@ -448,15 +448,12 @@ $color: darken(#f5c4cb, 20);
 }
 
 .features {
-
   margin: 56px auto;
   padding: 0 16px;
   >ul{
     >li{
-      //border: 1px solid red;
-      padding-left: 60px;
+      width: 100%;
     }
-
   }
   @media (min-width: 800px) {
     > ul {
@@ -478,7 +475,6 @@ $color: darken(#f5c4cb, 20);
   > ul {
     display: flex;
     flex-wrap: wrap;
-
     > li {
       margin: 16px 0;
       display: grid;
